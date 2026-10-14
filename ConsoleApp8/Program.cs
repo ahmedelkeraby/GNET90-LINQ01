@@ -53,6 +53,7 @@ namespace LINQ
                 StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
 
             });
+
             foreach (var item in result6)
                 Console.WriteLine($"{item.Name} | {item.Price} | {item.StockStatus}");
             #endregion 
