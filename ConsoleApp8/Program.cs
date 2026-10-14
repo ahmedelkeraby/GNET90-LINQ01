@@ -85,6 +85,11 @@ namespace LINQ
             foreach (var x in result10)
                 Console.WriteLine($"{x.CustomerID} - {x.OrderDate:yyyy-MM-dd}");
             #endregion
+            #region Q11
+            var result11 = ProductList.Select((p, index) => new { p.ProductName, Index = index + 1 });
+            foreach(var item in result11)
+                Console.WriteLine($"{item.Index}. {item.ProductName}");
+            #endregion
 
 
 
