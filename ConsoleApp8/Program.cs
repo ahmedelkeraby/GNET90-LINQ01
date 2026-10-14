@@ -47,7 +47,6 @@ namespace LINQ
                 Console.WriteLine($"{p.ProductName} (Stock: {p.UnitsInStock})");
             #endregion
             #region Q6
-
             var result6 = ProductList.Select(p => new {
                 Name = p.ProductName,
                 Price = p.UnitPrice,
