@@ -98,7 +98,12 @@ namespace LINQ
             foreach (var word in result12)
                 Console.WriteLine(word);
             #endregion
-
+            #region Q13
+            string[] digits = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+            var result13 = digits.Where(d => d.Length > 1 && d[1] == 'i').Reverse();    
+            foreach (var digit in result13)
+                Console.WriteLine(digit);
+            #endregion
 
 
 
