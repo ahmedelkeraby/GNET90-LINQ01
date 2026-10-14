@@ -70,6 +70,14 @@ namespace LINQ
             foreach (var p in result8)
                 Console.WriteLine($"{p.Category} | {p.ProductName} | {p.UnitPrice}");
             #endregion
+            #region Q9
+            var result9 = ProductList.Where(p => p.Category == "Beverages")
+                                     .OrderByDescending(p => p.UnitsInStock)
+                                     .Select(p => new { p.ProductName, p.UnitsInStock });
+            foreach (var p in result9)  
+                Console.WriteLine($"{p.ProductName} - {p.UnitsInStock}");
+            #endregion
+
 
 
 
