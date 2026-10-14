@@ -42,6 +42,7 @@ namespace LINQ
             #region Q5
             var result5 = ProductList.Where(p => p.Category == "Condiments" && p.UnitsInStock > 0)
                 .Select(p => new { p.ProductName, p.UnitsInStock });
+
             foreach (var p in result5)
                 Console.WriteLine($"{p.ProductName} (Stock: {p.UnitsInStock})");
             #endregion
