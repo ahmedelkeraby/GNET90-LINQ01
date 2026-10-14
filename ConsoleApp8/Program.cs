@@ -58,6 +58,7 @@ namespace LINQ
                 Console.WriteLine($"{item.Name} | {item.Price} | {item.StockStatus}");
             #endregion 
             #region Q7
+
             var result7 = ProductList.Select((p, index) => $"{index + 1}. {p.ProductName}");
             foreach (var line in result7)
                 Console.WriteLine(line);
