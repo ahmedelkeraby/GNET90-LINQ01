@@ -20,7 +20,6 @@ namespace LINQ
 
             #region Q2
             var result2 = ProductList.Select(p => p.ProductName);
-
             foreach (var name in result2)
                 Console.WriteLine(name);
             #endregion
