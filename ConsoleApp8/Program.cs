@@ -34,6 +34,7 @@ namespace LINQ
             #region Q4
             var result4 = ProductList.Where(p => p.UnitPrice > 10 && p.UnitPrice < 30)
                 .Select(p => new { p.ProductName, p.UnitPrice });
+
             foreach (var p in result4)
                 Console.WriteLine($"{p.ProductName} - {p.UnitPrice}");
             #endregion
