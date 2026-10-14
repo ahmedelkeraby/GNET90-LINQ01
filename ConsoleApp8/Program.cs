@@ -77,6 +77,15 @@ namespace LINQ
             foreach (var p in result9)  
                 Console.WriteLine($"{p.ProductName} - {p.UnitsInStock}");
             #endregion
+            #region Q10
+            var result10 = from c in CustomerList
+                      from o in c.Orders
+                      where o.OrderDate.Year >= 1997
+                      select new { c.CustomerID, o.OrderDate };
+            foreach (var x in result10)
+                Console.WriteLine($"{x.CustomerID} - {x.OrderDate:yyyy-MM-dd}");
+            #endregion
+
 
 
 
