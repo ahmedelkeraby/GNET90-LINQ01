@@ -13,8 +13,7 @@ namespace LINQ
         {
             #region Q1
             var result = ProductList.Where(p => p.Category == "Seafood")
-
-                              .Select(p => new { p.ProductName, p.UnitPrice });
+                                    .Select(p => new { p.ProductName, p.UnitPrice });
             foreach (var p in result)
                 Console.WriteLine($"{p.ProductName} - {p.UnitPrice}");
             #endregion
