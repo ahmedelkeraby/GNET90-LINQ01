@@ -90,7 +90,14 @@ namespace LINQ
             foreach(var item in result11)
                 Console.WriteLine($"{item.Index}. {item.ProductName}");
             #endregion
+            #region Q12
+            String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
 
+            var result12 = Arr.OrderBy(w => w.Length)
+                              .ThenBy(w => w, StringComparer.OrdinalIgnoreCase);
+            foreach (var word in result12)
+                Console.WriteLine(word);
+            #endregion
 
 
 
