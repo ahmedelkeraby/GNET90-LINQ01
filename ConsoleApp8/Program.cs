@@ -64,6 +64,7 @@ namespace LINQ
                 Console.WriteLine(line);
             #endregion
             #region Q8
+
             var result8 = ProductList.OrderBy(p => p.Category)
                                    .ThenByDescending(p => p.UnitPrice);
             foreach (var p in result8)
